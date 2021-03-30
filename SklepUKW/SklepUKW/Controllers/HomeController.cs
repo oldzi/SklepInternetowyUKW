@@ -14,17 +14,13 @@ namespace SklepUKW.Controllers
 
         // GET: Home
         public ActionResult Index()
-        {
-            Category category = new Category()
-            {
-                CategoryId = 1,
-                Name = "Horror",
-                Desc = "Filmy od lat 16"
-            };
-            db.Categories.Add(category);
-            db.SaveChanges();
-
+        { 
             return View();
+        }
+
+        public ActionResult StaticSite(string name)
+        {
+            return View(name);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using SklepUKW.Models;
+﻿
+using SklepUKW.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -153,7 +154,7 @@ namespace SklepUKW.DAL
 
             foreach (var film in filmy)
             {
-                context.Filmy.Add(film);
+                context.Films.Add(film);
             }
             context.SaveChanges();
         }
