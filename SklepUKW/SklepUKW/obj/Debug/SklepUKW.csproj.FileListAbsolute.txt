@@ -77,3 +77,8 @@ C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.pdb
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.InitialCreate.resources
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.csproj.GenerateResource.cache
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.deleteLength.resources
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.add_PosterName.resources
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.Ado.dll
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.Core.dll
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.EF6.dll
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.add_AddDate.resources
