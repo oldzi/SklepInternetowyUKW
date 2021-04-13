@@ -1,22 +1,19 @@
 ﻿
+using SklepUKW.Migrations;
 using SklepUKW.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
 namespace SklepUKW.DAL
 {
-    public class FilmsInitializer : DropCreateDatabaseAlways<FilmsContext>
+    public class FilmsInitializer : MigrateDatabaseToLatestVersion<FilmsContext, Configuration>
     {
-        protected override void Seed(FilmsContext context)
-        {
-            base.Seed(context);
-            SeedFilmy(context);
-        }
 
-        private void SeedFilmy(FilmsContext context)
+        public static void SeedFilmy(FilmsContext context)
         {
             var categories = new List<Category>()
             {
@@ -54,7 +51,7 @@ namespace SklepUKW.DAL
 
             foreach (var category in categories)
             {
-                context.Categories.Add(category);
+                context.Categories.AddOrUpdate(category);
             }
             context.SaveChanges();
 
@@ -154,7 +151,7 @@ namespace SklepUKW.DAL
 
             foreach (var film in filmy)
             {
-                context.Films.Add(film);
+                context.Films.AddOrUpdate(film);
             }
             context.SaveChanges();
         }

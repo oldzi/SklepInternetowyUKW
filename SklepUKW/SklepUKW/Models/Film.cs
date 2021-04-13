@@ -25,7 +25,7 @@ namespace SklepUKW.Models
 
         public int CategoryId { get; set; }
 
-        public int Length { get; set; }
+        //public int Length { get; set; }
 
         public virtual Category Category { get; set; }
 

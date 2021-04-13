@@ -1,5 +1,6 @@
 ﻿using SklepUKW.DAL;
 using SklepUKW.Models;
+using SklepUKW.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,11 @@ namespace SklepUKW.Controllers
 
         // GET: Home
         public ActionResult Index()
-        { 
-            return View();
+        {
+            var categories = db.Categories.ToList();
+            IndexViewModel ivm = new IndexViewModel();
+            ivm.Categories = categories;
+            return View(ivm);
         }
 
         public ActionResult StaticSite(string name)
