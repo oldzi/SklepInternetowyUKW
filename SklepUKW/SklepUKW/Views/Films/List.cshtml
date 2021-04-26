@@ -10,11 +10,11 @@
 <table border=1px>
     @foreach (var film in Model)
     {
-        <tr>
-            <td><img src="@Url.PostersPath(film.PosterName)"></td>
-            <td>@film.Title</td>
-            <td>@film.Price</td>
-            <td>Dodaj do koszyka</td>
-        </tr>
+    <tr>
+        <td><a href="@Url.Action("Details", "Films", new { id = film.FilmId})"><img src="@Url.PostersPath(film.PosterName)" /></a></td>
+        <td>@film.Title</td>
+        <td>@film.Price</td>
+        <td>Dodaj do koszyka</td>
+    </tr>
     } 
 <table>
