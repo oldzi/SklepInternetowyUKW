@@ -148,6 +148,10 @@
     <Compile Include="Migrations\202104130838011_add_AddDate.designer.cs">
       <DependentUpon>202104130838011_add_AddDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104261735097_addLengthField.cs" />
+    <Compile Include="Migrations\202104261735097_addLengthField.designer.cs">
+      <DependentUpon>202104261735097_addLengthField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Film.cs" />
@@ -190,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104130838011_add_AddDate.resx">
       <DependentUpon>202104130838011_add_AddDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104261735097_addLengthField.resx">
+      <DependentUpon>202104261735097_addLengthField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

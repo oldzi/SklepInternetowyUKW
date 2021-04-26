@@ -82,3 +82,4 @@ C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.Ado.dll
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.Core.dll
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Glimpse.EF6.dll
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.add_AddDate.resources
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.addLengthField.resources
