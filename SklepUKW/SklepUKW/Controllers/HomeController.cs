@@ -16,15 +16,18 @@ namespace SklepUKW.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var categories = db.Categories.ToList();
-            IndexViewModel ivm = new IndexViewModel();
-            ivm.Categories = categories;
-            return View(ivm);
+            var top3LongestFilms = db.Films.OrderByDescending(f => f.Length).Take(3);
+            return View(top3LongestFilms);
         }
 
         public ActionResult StaticSite(string name)
         {
             return View(name);
+        }
+
+        public ActionResult Test()
+        {
+            return View();
         }
     }
 }

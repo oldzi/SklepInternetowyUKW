@@ -1,4 +1,5 @@
 ﻿using SklepUKW.DAL;
+using SklepUKW.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,13 @@ namespace SklepUKW.Controllers
         public ActionResult List(string categoryName)
         {
             var category = db.Categories.Include("Films").Where(c => c.Name.ToLower() == categoryName.ToLower()).Single();
-            return View(category.Films.ToList());
+
+            ListViewModel model = new ListViewModel();
+            model.Category = category;
+            model.FilmsFromCategory = category.Films.ToList();
+            var nowosci = db.Films.OrderByDescending(f => f.AddDate).Take(3);
+            model.Top3NewestFilms = nowosci;
+            return View(model);
         }
 
         public ActionResult Details(int id)
@@ -41,7 +48,5 @@ namespace SklepUKW.Controllers
             var category = db.Categories.Include("Films").Where(c => c.Name.ToLower() == categoryName.ToLower()).Single();
             return PartialView("_FilmsFromCategory", category.Films.ToList());
         }
-    }
-} 
     }
 }
