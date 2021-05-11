@@ -48,17 +48,16 @@ namespace SklepUKW.Controllers
             {
                 ItemId = id,
                 ItemQuantity = cartManager.RemoveFromCart(id),
-                CartValue = cartManager.GetCartValue()
+                CartValue = cartManager.GetCartValue(),
+                CartQuantity = cartManager.GetCartQuantity()
             };
 
-            return Json(model); 
+            return Json(model);
         }
 
         public int GetCartQuantity()
         {
             return cartManager.GetCartQuantity();
         }
-
-
     }
 }
