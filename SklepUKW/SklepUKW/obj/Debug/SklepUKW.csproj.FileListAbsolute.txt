@@ -111,3 +111,5 @@ C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Microsoft.Owin.Securit
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\Newtonsoft.Json.xml
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.add_User.resources
 C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\obj\Debug\SklepUKW.Migrations.add_UserData.resources
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\roslyn\System.Memory.dll
+C:\Users\user\source\repos\SklepUKW\SklepUKW\SklepUKW\bin\roslyn\System.Numerics.Vectors.dll
