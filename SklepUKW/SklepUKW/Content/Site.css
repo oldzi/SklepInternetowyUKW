@@ -155,3 +155,9 @@ input {
     width: 150px;
     text-align: center;
 }
+
+.error 
+{
+    color: #d5adc3;
+    font-size: 15px;
+}
